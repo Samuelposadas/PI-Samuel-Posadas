@@ -16,7 +16,6 @@ import Card from "../../components/Card/Card";
 import Paginator from "../../components/Paginator/Paginator";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Navbar from "../../layout/Navbar/Navbar";
-import Footer from "../../layout/Footer/Footer";
 import Loading from "../../layout/Loading/Loading";
 
 const Home = () => {
@@ -167,7 +166,6 @@ const Home = () => {
               allRecipes={allRecipes.length}
               paginate={paginate}
             />
-            <Footer />
           </div>
         </div>
       ) : (

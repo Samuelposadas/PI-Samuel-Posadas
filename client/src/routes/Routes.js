@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Contact from "../pages/Contacto/Contacto";
+import Contact from "../pages/Contact/Contact";
 import CreateRecipe from "../pages/CreateRecipe/CreateRecipe";
 import Detail from "../pages/Detail/Detail";
 import Home from "../pages/Home/Home";

@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import s from "./createRecipe.module.css";
 
 import Navbar from "../../layout/Navbar/Navbar";
-import Loading from "../../layout/Loading/Loading";
 
 function validate(input) {
   let errors = {};
