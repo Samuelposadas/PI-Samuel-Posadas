@@ -4,7 +4,7 @@ import Navbar from "../../layout/Navbar/Navbar";
 import s from "./contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNode } from "@fortawesome/free-brands-svg-icons";
-import sequelize from "../../img/sequelize.jpg";
+import sequelize from "../../img/sequelize.png";
 
 const Contact = () => {
   return (
