@@ -39,7 +39,7 @@
 }
 
 .detail img {
-  width: 300px;
+  width: 400px;
   height: 300px;
   margin-left: 39%;
   margin-top: 10px;
@@ -49,11 +49,11 @@
 .subTitle h3,
 h2 {
   display: flex;
-  margin-left: 10%;
+  margin-left: 30%;
 }
 
 .details h3 {
-  margin-left: 10%;
+  margin-left: 30%;
 }
 
 .details p {
