@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Contacto from "../pages/Contacto/Contacto";
 
+import Contact from "../pages/Contacto/Contacto";
 import CreateRecipe from "../pages/CreateRecipe/CreateRecipe";
 import Detail from "../pages/Detail/Detail";
 import Home from "../pages/Home/Home";
@@ -15,7 +15,7 @@ const Routes = () => {
           <Route exact path="/home" component={Home} />
           <Route exact path="/home/:id" component={Detail} />
           <Route exact path="/recipe" component={CreateRecipe} />
-          <Route exact path="/contacto" component={Contacto} />
+          <Route exact path="/contacto" component={Contact} />
         </Switch>
       </Router>
     </div>

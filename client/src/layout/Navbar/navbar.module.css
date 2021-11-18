@@ -1,0 +1,29 @@
+.container_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  box-shadow: 2px 4px 18px #000000;
+  z-index: 0;
+  top: 0;
+  position: sticky;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding-right: 35px;
+}
+
+.link:hover {
+  opacity: 0.6;
+  transition: 0.15s;
+}
+
+.img_logotipo {
+  width: 60px;
+  height: 60px;
+}

@@ -1,0 +1,42 @@
+.contenedor_landing {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+      to top,
+      rgba(80, 110, 179, 0.459),
+      rgba(9, 13, 22, 0.561)
+    ),
+    url("../../img/ladingPage.jpg");
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  padding-top: 80px;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 70px;
+  font-family: "Nanum Myeongjo", serif;
+  color: white;
+  padding-left: 43%;
+}
+
+.link {
+  text-decoration: none;
+  border: 1px solid rgb(195, 185, 185);
+  color: white;
+  font-size: 35px;
+  padding: 15px;
+  margin: 45%;
+}
+
+.link:hover {
+  background-color: rgb(40, 66, 95);
+  transition: 0.7s;
+  animation-name: mianimacion;
+  animation-duration: 0.5s;
+}

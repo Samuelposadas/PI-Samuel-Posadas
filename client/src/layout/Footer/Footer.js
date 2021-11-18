@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import s from "./footer.module.css";
 
 const Footer = () => {
-    return (
-        <div>
-            <h1>this is the footer</h1>
-        </div>
-    )
-}
+  return <div className={s.container_footer}></div>;
+};
 
-export default Footer
+export default Footer;

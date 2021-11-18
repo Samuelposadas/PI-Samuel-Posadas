@@ -1,16 +1,15 @@
 .searchBar {
   display: flex;
   justify-content: center;
-  width: 250px;
-  height: 25px;
+  width: 350px;
+  height: 35px;
   margin-bottom: 0px;
-  margin-left: 42vw;
+  margin-left: 38vw;
+  padding-top: 20px;
 }
 
 .input {
-    border-radius: 3px;
-  border-width: 0.1px;
-color: black;
+  border-radius: 3px;
   font-size: 1rem;
   font-weight: 300;
   width: 20rem;
@@ -18,13 +17,14 @@ color: black;
 ::placeholder {
   color: rgb(0, 0, 0);
   font-size: 1rem;
+  text-align: center;
 }
 
 .btn {
   border: solid 2px rgb(0, 0, 0);
   border-radius: 5px;
   width: 40px;
-  height: 20px;
+  height: 35px;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -33,9 +33,9 @@ color: black;
   cursor: pointer;
   color: white;
   margin-left: 3px;
-  padding: 11px 30px 11px 30px;
+  padding: 15px 35px 15px 35px;
 }
 .btn:hover {
-    transition: 0.4s;
-        opacity: 0.4;
+  transition: 0.4s;
+  opacity: 0.6;
 }

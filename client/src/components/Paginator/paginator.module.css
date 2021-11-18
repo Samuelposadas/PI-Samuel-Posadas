@@ -1,0 +1,18 @@
+.btnPag {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+
+.btnPag button {
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  padding: 3px 10px 3px 10px;
+  font-size: 18px;
+}
+
+.btnPag button:hover {
+  opacity: 0.6;
+}

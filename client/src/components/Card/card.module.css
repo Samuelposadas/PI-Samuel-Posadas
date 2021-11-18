@@ -1,0 +1,62 @@
+.cardComp {
+  border: solid 2px white;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 0.22452731092436973) 0%,
+    rgba(255, 245, 245, 0.842) 64%
+  );
+  background-position: absolute;
+  border-radius: 8px;
+  background: cover;
+  box-shadow: 3px 8px 20px #000000;
+  color: black;
+  display: inline-block;
+  margin: 2%;
+  padding: 1em;
+  vertical-align: top;
+  width: 33, 5%;
+}
+
+.cardComp:hover {
+  animation-name: mianimacion;
+  animation-duration: 0.5s;
+}
+
+@keyframes mianimacion {
+  0% {
+    transform: scale(1.1);
+  }
+}
+
+.cardComp h3 {
+  display: flex;
+  text-align: center;
+  width: 250px;
+  margin-top: 5px;
+  color: black;
+}
+
+.cardComp img {
+  display: flex;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.typeOfD {
+  color: black;
+  margin-bottom: 7px;
+  margin-top: 9px;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Nanum Myeongjo", serif;
+  text-decoration: underline;
+}
+
+.diets {
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -1,15 +1,15 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
+import s from "./landing.module.css";
 
-const Landing = () => {
+const LandingPage = () => {
   return (
-    <div>
-      <h1>Landing</h1>
-
-      <Link to="/home">Home</Link>
+    <div className={s.contenedor_landing}>
+      <h1 className={s.title}>Food App !</h1>
+      <Link className={s.link} to="/home" exact>
+        WELCOME
+      </Link>
     </div>
   );
 };
 
-export default Landing;
+export default LandingPage;

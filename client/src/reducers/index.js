@@ -50,6 +50,7 @@ function rootReducer(state = initialState, action) {
 
       return {
         ...state,
+        loading: false,
         recipes: action.payload === "default" ? allRecipes : ternario,
       };
     case ORDER_BY_NAME:
@@ -75,6 +76,7 @@ function rootReducer(state = initialState, action) {
             });
       return {
         ...state,
+
         recipes: action.payload === "default" ? state.recipes : sortedRecipes,
       };
     case ORDER_BY_SCORE_LIKES:
@@ -84,16 +86,19 @@ function rootReducer(state = initialState, action) {
           : state.recipes.sort((a, b) => b.aggregateLikes - a.aggregateLikes);
       return {
         ...state,
+
         recipes: action.payload === "All" ? state.recipes : orderedRecipes,
       };
     case GET_NAME_RECIPE:
       return {
         ...state,
+
         recipes: action.payload,
       };
     case GET_DIETS:
       return {
         ...state,
+
         diets: action.payload,
       };
     case POST_RECIPE:

@@ -1,0 +1,80 @@
+.home {
+  height: 1900px;
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(8, 11, 19, 0.39),
+      rgba(5, 7, 12, 0.466)
+    ),
+    url("../../img/backgroundHome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.showAll {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.showAll button {
+  padding: 5px 10px 5px 10px;
+  background: black;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #000000;
+}
+.showAll button:hover {
+  opacity: 0.6;
+  transition: 0.7s;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px 10px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.span {
+  display: flex;
+  margin-right: 6px;
+  margin-left: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.paginate {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.paginate button {
+  background-color: black;
+  margin-left: 5px;
+}
+.paginate button:hover {
+  opacity: 0.6;
+}
+
+.cards {
+  margin-left: 7%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.linkCard {
+  text-decoration: none;
+}
+
+.dietsMap {
+  margin-top: 2px;
+  margin-bottom: 0;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 18px;
+}

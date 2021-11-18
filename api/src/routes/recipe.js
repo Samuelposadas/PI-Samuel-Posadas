@@ -5,6 +5,6 @@ const { recipes, createRecipe, findById } = require("../controllers/recipe");
 
 router.get("/", recipes);
 router.get("/:id", findById);
-router.post("/", createRecipe);
+router.post("/new", createRecipe);
 
 module.exports = router;
