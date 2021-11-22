@@ -32,25 +32,24 @@ function rootReducer(state = initialState, action) {
       };
     case FILTER_BY_DIET:
       let allRecipes = state.allRecipes;
-      const recipesApi = allRecipes.filter((receta) => !receta.createdDb);
-      const filteredRecipesApi = recipesApi.filter((r) =>
-        r.diets.includes(action.payload)
+      const recipesApi = allRecipes.filter((recipe) => !recipe.createdDb);
+      const filteredRecipesApi = recipesApi.filter((recipe) =>
+        recipe.diets.includes(action.payload)
       );
-      const recipeDb = allRecipes.filter((r) => r.createdDb);
+      const recipeDb = allRecipes.filter((recipe) => recipe.createdDb);
       const filteredRecipeDb = recipeDb.filter(
-        (receta) => receta.diets.name === action.payload
+        (recipe) => recipe.diets.name === action.payload
       );
       const filtered = filteredRecipeDb.concat(filteredRecipesApi);
-      const vegetarianApi = allRecipes.filter((receta) => !!receta.vegetarian);
+      const vegetarianApi = allRecipes.filter((recipe) => !!recipe.vegetarian);
       const vegetarianDb = recipeDb.filter(
-        (receta) => receta.diets.name === "vegetarian"
+        (recipe) => recipe.diets.name === "vegetarian"
       );
       const vegetarian = vegetarianDb.concat(vegetarianApi);
       const ternario = action.payload === "vegetarian" ? vegetarian : filtered;
 
       return {
         ...state,
-        loading: false,
         recipes: action.payload === "default" ? allRecipes : ternario,
       };
     case ORDER_BY_NAME:
@@ -92,13 +91,11 @@ function rootReducer(state = initialState, action) {
     case GET_NAME_RECIPE:
       return {
         ...state,
-
         recipes: action.payload,
       };
     case GET_DIETS:
       return {
         ...state,
-
         diets: action.payload,
       };
     case POST_RECIPE:
